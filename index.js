@@ -38,6 +38,10 @@ server.get('/', (req, res) => {
     res.json({message: "request received, yo!"})
 });
 
+// server.get('/', (req, res) => {
+//     res.send("We are live!");
+// });
+
 // 2 resources: suppliers & items
 
 // This gets complicated when you have a ton of these!!!!
