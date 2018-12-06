@@ -16,9 +16,11 @@ const supplierRouter = require('./routers/supplier_router.js');
 const itemRouter = require('./routers/item_router.js');
 // .js is optional
 
-const server = express();
+process.env
+console.log('env', process.env);
 
-const PORT = 5050;
+const server = express();
+const PORT = process.env.PORT || 5050;
 
 // middleware
 // 1) Built in
